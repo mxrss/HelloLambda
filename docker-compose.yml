@@ -1,0 +1,8 @@
+golang:
+  image:  golang:1.3-onbuild
+  working_dir: /usr/src/myapp
+  volumes:
+    - ".:/usr/src/myapp"
+  command:
+    - make
+    - build-linux
