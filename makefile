@@ -9,6 +9,11 @@ build: format
 clean:
 	rm -fr binary
 
+package: build
+	cp $(CURDIR)/sheller.js $(CURDIR)/binary/sheller.js
+	chmod +x $(CURDIR)/binary/hellolambda
+	zip -Xj $(CURDIR)/binary/folder.zip $(CURDIR)/binary/* -x "*.DS_STORE"
+
 run:
-	chmod +x $(CURDIR)/binary/redisping2
-	$(CURDIR)/binary/redisping2
+	chmod +x $(CURDIR)/binary/hellolambda
+	$(CURDIR)/binary/hellolambda

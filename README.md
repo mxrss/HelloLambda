@@ -12,4 +12,3 @@ the binaries from GOLANG.
  * Docker-Machine
  * GoLang
  * Lambda
- 
