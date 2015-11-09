@@ -10,6 +10,7 @@ _obj
 _test
 binary
 .idea
+.DS_Store
 
 # Architecture specific extensions/prefixes
 *.[568vq]
